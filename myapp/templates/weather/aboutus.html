@@ -1,0 +1,60 @@
+
+{% extends 'weather/base.html' %}<!-- Header -->
+{% block content %}
+{% load static %}
+<header class="bg-primary text-center py-5 mb-4">
+    <div class="container">
+      <h1 class="font-weight-light text-white">Meet the Team</h1>
+    </div>
+  </header>
+  
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <!-- Team Member 1 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'Gagan Varma.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">Gagan Varma</h5>
+            <div class="card-text text-black-50">Backend Developer</div>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 2 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'shantanu.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">shantanu</h5>
+            <div class="card-text text-black-50">Frontend Developer</div>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 3 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'rukhamni rajak.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">Rukhamni</h5>
+            <div class="card-text text-black-50">Tester</div>
+          </div>
+        </div>
+      </div>
+      <!-- Team Member 4 -->
+      <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-0 shadow">
+          <img src="{% static 'Shaifali rajput.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">Shaifali rajput</h5>
+            <div class="card-text text-black-50">Graphics Designer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+  
+  </div>
+  <!-- /.container -->
+  {% endblock %}
+  

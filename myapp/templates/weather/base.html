@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
+    <link rel="shortcut icon" href="https://cdn3.iconfinder.com/data/icons/bebreezee-weather-symbols/691/icon-weather-sunsleetlight-512.png" type="image/x-icon">
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+</head>
+<body>
+    <section class="hero is-primary">
+        <!--Navbar -->
+<nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color">
+    <a class="navbar-brand" href="#">Weather website</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+      aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="{% url 'home' %}">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'aboutus' %}">About us</a>
+        </li>
+       
+       
+      </ul>
+      <ul class="navbar-nav ml-auto nav-flex-icons">
+        <li class="nav-item">
+          <a class="nav-link waves-effect waves-light">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-effect waves-light">
+            <i class="fab fa-google-plus-g"></i>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
+  <!--/.Navbar -->
+
+{% block content %}
+{% endblock %}
+<footer class="page-footer font-small default-color pt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+  
+          <!-- Content -->
+          <h5 class="font-weight-bold text-uppercase mb-4">about webapplication</h5>
+          <p>Weather website is a django web based applications which can extract the data.</p>
+          <p> on any cities around the world related to weather like temperature, coordinator, humidity..etc  and show the data on website.</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mb-4">contribution</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <p>
+                <a href="#!">Gagan Varma</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="#!">Shantanu</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="#!">Rukhamni</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="#!">Shaifali rajput</a>
+              </p>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+  
+          <!-- Contact details -->
+          <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <p>
+                <i class="fas fa-home mr-3"></i> Jabalpur(Madhya Pradesh</p>
+            </li>
+            <li>
+              <p>
+                <i class="fas fa-envelope mr-3"></i> vgagan312@gmail.com</p>
+            </li>
+            <li>
+              <p>
+                <i class="fas fa-phone mr-3"></i>6260248304</p>
+            </li>
+           
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+  
+          <!-- Social buttons -->
+          <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+  
+          <!-- Facebook -->
+          <a type="button" class="btn-floating btn-fb">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <!-- Twitter -->
+          <a type="button" class="btn-floating btn-tw">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <!-- Google +-->
+          <a type="button" class="btn-floating btn-gplus">
+            <i class="fab fa-google-plus-g"></i>
+          </a>
+          <!-- Dribbble -->
+          <a type="button" class="btn-floating btn-dribbble">
+            <i class="fab fa-dribbble"></i>
+          </a>
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2021 Copyright:
+      <a href=""> </a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+</body>
+
+</html>
